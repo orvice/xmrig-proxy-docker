@@ -9,3 +9,5 @@ RUN mkdir xmrig/build
 WORKDIR /app/xmrig/build
 RUN cmake ..
 RUN make -j$(nproc)
+
+ENTRYPOINT [ "/app/xmrig/build/xmrig-proxy" ]
