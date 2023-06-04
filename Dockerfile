@@ -1,6 +1,6 @@
 FROM debian:11
 
-RUN apt install -y git build-essential cmake libuv1-dev uuid-dev libmicrohttpd-dev libssl-dev
+RUN apt update -y && apt install -y git build-essential cmake libuv1-dev uuid-dev libmicrohttpd-dev libssl-dev
 
 WORKDIR /app
 
