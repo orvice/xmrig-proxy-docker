@@ -4,7 +4,7 @@ RUN apt update -y && apt install -y git build-essential cmake libuv1-dev uuid-de
 
 WORKDIR /app
 
-RUN https://github.com/xmrig/xmrig.git
+RUN git clone https://github.com/xmrig/xmrig.git
 RUN mkdir xmrig/build
 WORKDIR /app/xmrig/build
 RUN cmake ..
