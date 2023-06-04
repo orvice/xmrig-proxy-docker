@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM debian:11
 
 RUN apt install -y git build-essential cmake libuv1-dev uuid-dev libmicrohttpd-dev libssl-dev
 
